@@ -6,7 +6,7 @@
 #    By: rejocic <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/09 11:38:21 by rejocic           #+#    #+#              #
-#    Updated: 2018/07/20 14:30:19 by rejocic          ###   ########.fr        #
+#    Updated: 2018/08/05 12:34:55 by rejocic          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,20 +30,21 @@ ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
 ft_strisalnum.c ft_strisalpha.c ft_strisascii.c ft_strisdigit.c \
 ft_strisprint.c
 
+OBJS = $(SRCS:.c=.o)
+
 HEAD = libft.h
 
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(FLAG) -c $(SRCS) -I $(HEAD)
-	@ar rc libft.a *.o
+$(NAME): $(OBJS)
+	@ar rc libft.a $(OBJS)
 
 .PHONY: all clean fclean re
 
 clean:
-	rm -f *.o
+	@rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
