@@ -6,7 +6,7 @@
 #    By: rejocic <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/09 11:38:21 by rejocic           #+#    #+#              #
-#    Updated: 2018/08/05 12:34:55 by rejocic          ###   ########.fr        #
+#    Updated: 2018/08/24 13:25:01 by rejocic          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ ft_tolower.c ft_itoa.c ft_putendl.c ft_strdel.c ft_strncmp.c ft_toupper.c \
 ft_memalloc.c ft_putendl_fd.c ft_strdup.c ft_strncpy.c ft_lstnew.c \
 ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
 ft_strisalnum.c ft_strisalpha.c ft_strisascii.c ft_strisdigit.c \
-ft_strisprint.c
+ft_strisprint.c get_next_line.c
 
 OBJS = $(SRCS:.c=.o)
 

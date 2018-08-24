@@ -6,7 +6,7 @@
 /*   By: rejocic <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/09 12:01:03 by rejocic           #+#    #+#             */
-/*   Updated: 2018/07/23 11:01:37 by rejocic          ###   ########.fr       */
+/*   Updated: 2018/08/24 13:26:20 by rejocic          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
+# include <fcntl.h>
+
+# define BUFF_SIZE 16
+# define MAX_FD 4096
 
 typedef struct		s_list
 {
@@ -89,5 +93,7 @@ int					ft_strisalpha(char *str);
 int					ft_strisascii(char *str);
 int					ft_strisdigit(char *str);
 int					ft_strisprint(char *str);
+
+int					get_next_line(const int fd, char **line);
 
 #endif
