@@ -6,7 +6,7 @@
 /*   By: rejocic <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/09 12:01:03 by rejocic           #+#    #+#             */
-/*   Updated: 2018/08/24 13:26:20 by rejocic          ###   ########.fr       */
+/*   Updated: 2018/09/10 15:48:35 by rejocic          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include <stdlib.h>
 # include <fcntl.h>
 
-# define BUFF_SIZE 16
-# define MAX_FD 4096
+# define BUFF_SIZE 1024
+# define MAX_FD 4864
 
 typedef struct		s_list
 {
